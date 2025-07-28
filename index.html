@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body class="page"> 
+     <section class="progress">
+        <p class="progress__title">Progress</p> 
+        
+        <div class="progress__bar" role="progressbar" role aria-valuemin="0" aria-valuemax="100" style="--value: 75"></div>
+
+        <div class="progress__container">
+            <div class="progress__input-container">
+                <input type="number" min="0" max="100" class="progress__input">
+                <p class="progress__type">Value</p>
+            </div>
+    
+            <div class="progress__input-container">
+                <label class="switch">
+                    <input type="checkbox" class="progress__animated">
+                    <span class="slider round"></span>
+                </label>
+                <p class="progress__type">Animated</p>
+            </div>
+    
+            <div class="progress__input-container" >
+                <label class="switch">
+                    <input type="checkbox" class="progress__hide">
+                    <span class="slider round"></span>
+                </label>
+                <p class="progress__type">Hide</p>
+            </div>
+        </div>
+
+     </section>
+<script src="./index.js"></script>
+</body>
+</html>
